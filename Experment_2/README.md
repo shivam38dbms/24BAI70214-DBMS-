@@ -84,7 +84,7 @@ SELECT city, COUNT(*) AS count_students
 FROM Students
 GROUP BY city;
 ```
-![Students Table Creation](./Result_1.png)
+![](./screenshots/Result_1.png)
 - Execute the query to view all inserted records
 - Verify the data appears correctly in the result set
 
@@ -95,6 +95,7 @@ FROM Students
 GROUP BY City
 ORDER BY NO_OF_STUDENT ASC
 ```
+![](./screenshots/Result_2.png)
 - Execute the query to count students by city
 - Observe how GROUP BY organizes data by city
 - Note the ORDER BY sorts results by count in ascending order
@@ -107,13 +108,14 @@ FROM Students
 GROUP BY city
 HAVING COUNT(*) >= 3;
 ```
+![](./screenshots/Result_3.png)
 ### (viii) Calculate the average marks of students in each city.
 ```sql
 SELECT city, ROUND(AVG(marks), 2) AS average_marks
 FROM Students
 GROUP BY city;
 ```
-
+![](./screenshots/Result_4.png)
 
 ## Learning Outcome
 After completing this experiment, the student is able to:
