@@ -3,6 +3,11 @@
 ## Experiment
 To create an EMPLOYEE table in MySQL Workbench, insert employee records, and perform aggregate queries using `GROUP BY`, `HAVING`, and `ORDER BY` clauses.
 
+--- 
+## Software Requirements 
+- MySQL Workbench
+- - SQL Server
+
 ---
 
 ## Objective
@@ -43,10 +48,8 @@ To create an EMPLOYEE table in MySQL Workbench, insert employee records, and per
 ## SQL Code Used
 
 ```sql
--- Drop table if it already exists
 DROP TABLE IF EXISTS EMPLOYEE;
 
--- Create EMPLOYEE table
 CREATE TABLE EMPLOYEE (
     EMP_ID INT PRIMARY KEY,
     EMP_NAME VARCHAR(20),
@@ -55,40 +58,46 @@ CREATE TABLE EMPLOYEE (
     JOINING_DATE DATE
 );
 
--- Display table records
 SELECT * FROM EMPLOYEE;
+```
+<img width="1057" height="319" alt="Exp_2(1)" src="https://github.com/user-attachments/assets/6e43eae4-ec55-4ba3-85ff-0ad6959578db" />
 
--- Insert records into EMPLOYEE table
+```sql
 INSERT INTO EMPLOYEE VALUES (1, 'Jaskaran', 'IT', 30000, '2023-05-23');
 INSERT INTO EMPLOYEE VALUES (2, 'Sameer', 'IT', 27000, '2016-05-23');
 INSERT INTO EMPLOYEE VALUES (3, 'Kartik', 'HR', 19000, '2025-09-14');
 INSERT INTO EMPLOYEE VALUES (4, 'Yuvraj', 'Finance', 22000, '2021-11-06');
 INSERT INTO EMPLOYEE VALUES (5, 'Anhad', 'Finance', 55000, '2023-10-25');
 
--- Average salary department-wise
 SELECT 
     DEPARTMENT, 
     ROUND(AVG(SALARY), 2) AS AVG_SAL
 FROM EMPLOYEE
 GROUP BY DEPARTMENT;
+```
+<img width="1056" height="323" alt="Exp_2(2)" src="https://github.com/user-attachments/assets/0c200f95-04ed-4e4d-8e0e-b5598631e4e2" />
 
--- Employees with salary greater than 20000
+```sql
 SELECT 
     EMP_ID, 
     EMP_NAME, 
     SALARY
 FROM EMPLOYEE
 WHERE SALARY > 20000;
+```
+<img width="1061" height="326" alt="Exp_2(3)" src="https://github.com/user-attachments/assets/3c021e7d-0984-4feb-81b4-9117884ed7d8" />
 
--- Departments with average salary greater than 30000
+```sql
 SELECT 
     DEPARTMENT, 
     ROUND(AVG(SALARY), 2) AS AVG_SAL
 FROM EMPLOYEE
 GROUP BY DEPARTMENT
 HAVING AVG(SALARY) > 30000;
+```
+<img width="1054" height="329" alt="Exp_2(4)" src="https://github.com/user-attachments/assets/def79a51-c7a2-42b2-af64-374a5f34e131" />
 
--- Departments ordered by average salary (descending)
+```sql
 SELECT 
     DEPARTMENT, 
     ROUND(AVG(SALARY), 2) AS AVG_SAL
@@ -96,6 +105,7 @@ FROM EMPLOYEE
 GROUP BY DEPARTMENT
 ORDER BY AVG(SALARY) DESC;
 ```
+<img width="1052" height="332" alt="Exp_2(5)" src="https://github.com/user-attachments/assets/f9a7e01f-a5dd-4846-8fe2-57df0026e96b" />
 
 ---
 
@@ -114,3 +124,14 @@ SQL commands for:
 - Employees with salary greater than 20000 retrieved
 - Departments with average salary greater than 30000 displayed
 - Departments sorted by average salary in descending order
+
+---
+
+## Learning Outcome
+After completing this practical, the learner is able to:
+- Create and manage tables in MySQL
+- Insert and retrieve records from a database
+- Apply aggregate functions for data analysis
+- Use GROUP BY, HAVING, and ORDER BY clauses correctly
+- Analyze employee data department-wise
+- Gain practical exposure to SQL using MySQL Workbench
