@@ -92,6 +92,8 @@ ON library_db.BOOK_ISSUE TO 'LIBRARIAN'@'localhost';
 GRANT SELECT, INSERT, UPDATE, DELETE
 ON library_db.LIBRARY_VISITORS TO 'LIBRARIAN'@'localhost';
 ```
+<img width="1054" height="327" alt="Grant" src="https://github.com/user-attachments/assets/8f49999b-b9d3-43e1-9590-7ee6858395e5" />
+
 <img width="1049" height="264" alt="ss_4" src="https://github.com/user-attachments/assets/275b1971-f58c-409b-bf0f-aebe392c063e" />
 
 ```sql
@@ -110,6 +112,8 @@ ON library_db.BOOK_ISSUE FROM 'LIBRARIAN'@'localhost';
 REVOKE SELECT, INSERT, UPDATE, DELETE
 ON library_db.LIBRARY_VISITORS FROM 'LIBRARIAN'@'localhost';
 ```
+<img width="1055" height="332" alt="Grant__ss" src="https://github.com/user-attachments/assets/70608ae8-9b11-4232-9ec8-8772f6828238" />
+
 <img width="1049" height="233" alt="ss_7" src="https://github.com/user-attachments/assets/9d6ee762-4a9a-4a47-b73b-eda40cd14e46" />
 
 
