@@ -111,9 +111,9 @@ END;
 
   ---
 
-  ## Learning Outcomes
-  - Learned how to declare and use variables in PL/SQL
-  - Understood conditional logic using IF–ELSIF–ELSE
-  - Learned to display formatted output using DBMS_OUTPUT
-  - Gained practical exposure to writing and executing PL/SQL programs
-  - Learned how to calculate the grade of a student in PL/SQL
+## Learning Outcomes
+- Learned how to declare and use variables in PL/SQL
+- Understood conditional logic using IF–ELSIF–ELSE
+- Learned to display formatted output using DBMS_OUTPUT
+- Gained practical exposure to writing and executing PL/SQL programs
+- Learned how to calculate the grade of a student in PL/SQL
