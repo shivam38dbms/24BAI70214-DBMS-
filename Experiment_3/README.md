@@ -61,16 +61,22 @@ To understand the basic structure of a PL/SQL program by creating and executing 
 1. Start the Oracle FreeSQL environment.  
 2. Write the code to declare the variables.
 <img width="472" height="137" alt="Screenshot 2026-01-28 at 10 18 04 PM" src="https://github.com/user-attachments/assets/ceb1fb02-83be-43a9-a138-855d75b4687f" />
+
 3. Inside the `BEGIN` block, write code to display the student data using `DBMS_OUTPUT.PUT_LINE`.
 <img width="493" height="93" alt="Screenshot 2026-01-28 at 10 19 54 PM" src="https://github.com/user-attachments/assets/a208f16f-93e6-438d-9aa9-238cc3e067d4" />
+
 4. Use the `IF–ELSIF–ELSE` conditional statement to determine the grade based on student marks.
 <img width="243" height="163" alt="Screenshot 2026-01-28 at 10 20 02 PM" src="https://github.com/user-attachments/assets/1ade6af8-1447-4dcb-ac63-9aaf4efb90d3" />
+
 5. Display the final grade of the student using `DBMS_OUTPUT.PUT_LINE`.
 <img width="401" height="22" alt="Screenshot 2026-01-28 at 10 22 58 PM" src="https://github.com/user-attachments/assets/9353dc51-baa8-4c78-8c97-801b8ace9576" />
+
 6. End the PL/SQL block using the `END;` statement and execute the program.
 <img width="457" height="23" alt="Screenshot 2026-01-28 at 10 24 02 PM" src="https://github.com/user-attachments/assets/35524fcc-c8cc-4b2d-a02b-cfbedff99d23" />
+
 7. Verify the output displayed on the screen.
 <img width="744" height="340" alt="Output_Exp3(DBMS)" src="https://github.com/user-attachments/assets/0f9b2d54-848f-4762-98b2-b30b3923affb" />
+
  
 ---
 
