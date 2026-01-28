@@ -120,6 +120,7 @@ END;
 - Student Name: Jaskaran
 - Marks: 78
 - Grade: B
+<img width="744" height="340" alt="Output_Exp3(DBMS)" src="https://github.com/user-attachments/assets/ae9a30ac-fe69-4993-b93a-4fd86279582f" />
 
   ---
 
